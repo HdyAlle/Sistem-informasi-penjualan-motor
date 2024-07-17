@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="penjualanmotor.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Ujian Akhir Praktikum</title>
+</head>
+<body>
+    <body>
+        <h1 class="center">PROGRAM PENJUALAN MOTOR</h1>
+        <hr>
+        <table>
+          <tr>
+            <td>Merk Motor</td>
+            <td>
+              <select id="merkMotor">
+                <option value="15000000">HONDA</option>
+                <option value="14000000">YAMAHA</option>
+                <option value="13000000">SUZUKI</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>Aksesoris</td>
+            <td>
+              <input type="checkbox" id="velg" value="450000"> Velg Racing<br>
+              <input type="checkbox" id="helm" value="250000"> Helm<br>
+              <input type="checkbox" id="jaket" value="300000"> Jaket
+            </td>
+          </tr>
+          <tr>
+            <td>Cara Pembayaran</td>
+            <td>
+              <input type="radio" id="tunai" name="caraPembayaran" value="tunai" checked> Tunai<br>
+              <input type="radio" id="kredit" name="caraPembayaran" value="kredit"> Kredit
+            </td>
+          </tr>
+          <tr>
+            <td>Harga</td>
+            <td><input type="text" id="harga" readonly></td>
+          </tr>
+          <tr>
+            <td>Bunga/Diskon</td>
+            <td><input type="text" id="bungaDiskon" readonly></td>
+          </tr>
+          <tr>
+            <td>Total</td>
+            <td><input type="text" id="total" readonly></td>
+          </tr>
+        </table>
+        <hr>
+        <div>
+            <button onclick="calculateTotal()">Proses</button>
+            <button onclick="resetForm()">Reset</button>
+        </div>
+    
+</body>
+</html>

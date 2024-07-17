@@ -1,0 +1,24 @@
+table {
+    width: 25%;
+    margin: 20px auto;
+    border-collapse: collapse;
+  }
+div{
+    margin: 20px auto;
+    width: 50%;
+    
+    
+    text-align: center;
+}
+
+  th, td {
+    padding: 10px;
+    text-align: left;
+  }
+  input[type="text"] {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .center {
+    text-align: center;
+  }
